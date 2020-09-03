@@ -1,4 +1,4 @@
-FROM bebit/python-mecab-builder:dev as builder
+FROM bebit/python-mecab-builder:release-1.2 as builder
 RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && \
     mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y -n -p /var/lib/mecab/dic/mecab-ipadic-neologd
 
