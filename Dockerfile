@@ -13,3 +13,4 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 RUN sed -i -r 's/^dicdir = .*$$/dicdir = \/var\/lib\/mecab\/dic\/mecab-ipadic-neologd/' /etc/mecabrc
 COPY --from=builder /var/lib/mecab/dic/mecab-ipadic-neologd /var/lib/mecab/dic/mecab-ipadic-neologd
+
