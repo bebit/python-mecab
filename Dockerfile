@@ -1,8 +1,8 @@
-FROM ghcr.io/bebit/python-mecab-builder:3.0 as builder
+FROM ghcr.io/bebit/python-mecab-builder-dev:pr-14 as builder
 RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && \
     mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y -n -p /var/lib/mecab/dic/mecab-ipadic-neologd
 
-FROM python:3.7-slim-buster
+FROM python:3.10-slim-buster
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     default-libmysqlclient-dev=1.0.5 \
     mecab=0.996-6 \
