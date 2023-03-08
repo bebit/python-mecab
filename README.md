@@ -1,6 +1,6 @@
 # python-mecab
 
-`Python 3.7` with `mecab` dependencies.
+`Python 3.10` with `mecab` dependencies.
 
 ## How to use
 - Until 2.0 release, docker images are stored in https://hub.docker.com/r/bebit/python-mecab
