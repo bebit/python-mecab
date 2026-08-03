@@ -13,6 +13,7 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     mecab-ipadic-utf8=2.7.0-20070801+main-3 \
     libmecab-dev=0.996-14+b14 \
     swig=4.1.0-0.2 > /dev/null \
+    && apt-get -y upgrade > /dev/null \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 RUN sed -i -r 's/^dicdir = .*$$/dicdir = \/var\/lib\/mecab\/dic\/mecab-ipadic-neologd/' /etc/mecabrc
