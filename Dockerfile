@@ -4,7 +4,7 @@ RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && \
 
 FROM python:3.12-slim-bookworm
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
-    libexpat1=2.5.0-1+deb12u1 \
+    libexpat1=2.5.0-1+deb12u2 \
     libncursesw6=6.4-4 \
     ncurses-base=6.4-4 \
     ncurses-bin=6.4-4 \
