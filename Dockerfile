@@ -14,9 +14,9 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     libk5crypto3=1.20.1-2+deb12u5 \
     libkrb5-3=1.20.1-2+deb12u5 \
     libkrb5support0=1.20.1-2+deb12u5 \
-    libssl3=3.0.20-1~deb12u2 \
-    openssl=3.0.20-1~deb12u2 \
-    default-libmysqlclient-dev=1.1.0 \
+    libssl3=3.0.22-1~deb12u1 \
+    openssl=3.0.22-1~deb12u1 \
+    libmariadb3 \
     mecab=0.996-14+b14 \
     mecab-ipadic-utf8=2.7.0-20070801+main-3 \
     libmecab-dev=0.996-14+b14 \
