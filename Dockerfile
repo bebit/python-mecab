@@ -18,9 +18,9 @@ RUN apt-get update > /dev/null && apt-get upgrade -y > /dev/null \
     libssl3 \
     openssl \
     libmariadb3 \
-    mecab \
-    mecab-ipadic-utf8 \
-    libmecab-dev \
+    mecab=0.996-14+b14 \
+    mecab-ipadic-utf8=2.7.0-20070801+main-3 \
+    libmecab-dev=0.996-14+b14 \
     swig > /dev/null \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
